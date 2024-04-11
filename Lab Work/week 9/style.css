@@ -1,0 +1,12 @@
+#exercise table{
+    border: 2px solid black;
+}
+
+
+#exercise .blue tr td{
+    width:100px;
+    height:200px;
+    background-color:blue;
+    border-style:none;
+    position:relative;left:0%;top:0px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FORM</title>
+</head>
+<body> 
+    <form action="Form.html" method="get" enctype="multipart/form-data">
+        <table>
+            <caption> HTML Form Test </caption>
+            <tr>
+                <th>Name</th> 
+                <td>
+                    <input type="text" name="Name">
+                </td>
+            </tr> <br><br>
+
+            <tr>
+                <th>Address</th> 
+                <td>
+                    <input type="text" name="Address">
+                </td>
+            </tr> <br><br>
+
+            <tr>
+                <th>Email</th> 
+                <td>
+                    <input type="email" name="Email">
+                </td>
+            </tr> <br><br>
+
+            <tr>
+                <th>Select your Gender</th>
+                <td>
+                    <input type="radio" name="Male" value="M">Male
+                    <input type="radio" name="Female" value="F">Female
+                </td>
+            </tr><br><br>
+
+            <tr>
+                <th> Hobbies</th>
+                <td>
+                    <input type="checkbox" name="Sports" value="S">Sports
+                    <input type="checkbox" name="Movies" value="M">Movies
+                    <input type="checkbox" name="Travelling" value="T">Travelling
+                </td>
+            </tr><br><br>
+
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select name="country">
+                        <option value="N"> Nepal</option> 
+                        <option value="I"> India</option> 
+                        <option value="C"> China</option> 
+                        <option value="B"> Bangladesh</option> 
+                        <option value="K"> Korea</option> 
+                        <option value="J"> Japan</option> 
+                    </select>
+                </td>
+            </tr><br><br>
+
+            <tr>
+                <th>Message</th>
+                <td>
+                    <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr><br><br>
+
+            <tr>
+                <th></th>
+                <td><input  type="submit" value="Submit">
+                <input type="reset" value="Reset"></td>
+            </tr>
+        </table>       
+
+    </form>
+    
+</body>
+</html>
