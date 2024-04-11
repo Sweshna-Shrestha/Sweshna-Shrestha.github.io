@@ -1,0 +1,677 @@
+body{
+    width: 100%;
+}
+/*
+@media screen and (max-width:400px){ 
+nav div ul li{
+    display: inline-block;
+}
+}
+*/
+/* for home page*/
+
+/*
+@media screen and (max-width: 1000px) {
+    nav {
+            width: 40%;
+    }
+}   
+*/
+
+/*for navigation*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    width:100%;
+    background-color: white;
+}
+
+img{
+    width: 130px;
+    cursor: pointer;
+}
+
+nav .navigation {
+     display: flex;}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li {
+    list-style: none;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    padding: 10px 30px;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+    color: black;
+    transition: 0.2s;
+}
+
+/* home */
+
+#Home h1{
+    color: whitesmoke;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+#Home h4{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+#Home {
+    background-image: linear-gradient(rgba(10,6,55,0.3), rgba(6,5,47,0.8)),url(images/bg.jpeg);
+    width: 100% ; 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
+ }
+
+ #Home .btn{
+    margin-top: 30px;
+ }
+
+ #Home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 25px;
+    background-color: aliceblue;
+    font-weight: 600;
+    border-radius: 5px;
+ }
+
+ #Home a.black{
+    background-color: white;
+    color: black;
+ }
+ 
+ #Home a.black:hover{
+    background-color:black;
+    color:white;
+ }
+
+/* Features */
+ #Features{
+    background-image: linear-gradient(rgba(10,6,55,0.3), rgba(6,5,47,0.8)),url(images/for-home.jpg);
+    width: 75% ; 
+    height: 100vh;
+    padding: 5vw 8vw 0 8vw;
+    margin: 40px ;
+    text-align: center;
+ }
+ 
+ #Features h1{
+    font-size: 3rem;
+    color:darkkhaki;
+ }
+ #Features p{
+    font-size: 1.5rem;
+    color: aliceblue;
+ }
+
+ #Features .students{
+    background: beige ;
+    text-align: start;
+    padding: 10px; 
+ }
+
+#Features .students h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(46,46,56);
+    padding: 10px 0 7px 0;
+}
+
+#Features .students p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(70,70,87);
+}
+
+/*for registration*/
+#registration{
+    margin-top: 40px;
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99, 112, 168, 0.5), rgba(81, 91, 233, 0.5)),
+    url(images/laptop.jpg);
+    width: 83%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reminder {
+    color: black;
+}
+
+#registration .reminder h1{
+    color: black;
+}
+
+#registration .reminder .time{
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .reminder .time .date{
+    text-align: center;
+    padding: 14px 34px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 2px solid gray;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#registration .form form table{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);  
+}
+
+#registration .form input {
+    margin: 16px;
+    padding: 15px 10px;
+    outline: none;
+}
+
+
+ #registration .form form table caption{
+    font-size: 2vw;
+ }
+
+ /* for footer*/
+ footer{
+    margin-top: 15px;
+    padding: 6vw;
+    background-color: black;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ }
+
+ footer .footer{
+    padding-bottom: 40px;
+ }
+
+ footer h3{
+    color:white;
+    font-weight: 500;
+    padding-bottom: 20px;
+ }
+ footer h3:hover{
+    color:hotpink;
+ }
+
+ footer li{
+    list-style: none;
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+ }
+
+ footer li:hover{
+    color:hotpink;
+ }
+
+
+                                                         /* for about page*/
+/* About-Home*/
+#about-home {
+    background-image: linear-gradient(rgba(10,6,55,0.3), rgba(6,5,47,0.8)),url(images/bg1.jpeg);
+    width: 100% ; 
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
+ }
+
+ 
+ body{
+   background-image: url(images/laptop.jpg);
+ } 
+ #about-home h1{
+    font-size: 45px;
+    color:white;
+ }
+ #about-home h4{
+    font-size: 30px;
+    color: white;
+ }
+ 
+ #ocean p{ 
+    color: rgb(223, 180, 126);
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#land{
+    background-color: #4b4b51;
+    padding: 2vw;
+    color: rgb(174, 160, 207);
+    font-size: 1.5vw;
+}
+
+#land h1{
+    color: rgb(3, 183, 123);
+    text-align: center;
+}
+
+
+/* for university*/
+#trust{
+    text-align: center;
+    padding: 8vw;
+    width: 85%;
+    display: block;
+}
+
+#trust .uni a img{
+    width: 300px;
+    height: 300px;
+}
+
+.uni {
+    float: left;
+    width: 33%;
+}
+#trust .uni h3{
+    background-color: black;
+    color: white;
+}
+#trust #hold h1{
+    color: black;
+    font-size: 3vw;
+}
+
+
+                                                              /* Gallery Page*/
+
+/* for orientation */
+#photos .orientation{
+    padding: 15vw 0  7vw 0;
+}
+
+#photos .orientation h1{
+    color: greenyellow;
+    text-align: center;
+    padding-bottom: 2vw;
+}
+#photos .orientation a img{
+    width: 15%;
+    padding: 0 3vw 0 6vw;
+}
+
+/* for placement*/
+#photos .placement{
+    padding: 2vw 0  5vw 0;
+}
+
+#photos .placement h1{
+    color: greenyellow;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+#photos .placement a img{
+    width: 15%;
+    padding: 0 3vw 0 6%;
+}
+
+/*for graduation*/
+#photos .graduation{
+    padding: 2vw 0  5vw 0;
+}
+
+#photos .graduation h1{
+    color: greenyellow;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+#photos .graduation a img{
+    width: 15%;
+    padding: 0 3vw 0 6%;
+}
+
+/*for fest*/
+#photos .fest{
+    padding: 2vw 0  5vw 0;
+}
+
+#photos .fest h1{
+    color: greenyellow;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+#photos .fest a img{
+    width: 15%;
+    padding: 0 3vw 0 6%;
+}
+
+                                            /*for contact*/
+.us h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    padding: 25vw 0 10vw 0 ;
+    background-image: linear-gradient(rgba(72, 41, 87, 0.3), rgba(100, 53, 147, 0.8)),url(images/forCC.jpeg);
+}
+
+#information {
+    display: flex;
+}
+
+#information .form,.Opening {
+    flex: 1; 
+    height: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+#information{
+    background-color:rgb(215, 203, 203);
+}
+#information .form{
+    
+    display: flex;
+    justify-content: flex-start;
+}
+#information .form form{
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+    font-size: 3vb;
+    font-weight: 500;
+    padding: 4vw;
+    background-color: #ededed;
+}
+#information .form input{
+    padding: 2px 2px;
+    outline: none;
+}
+
+
+#information .Opening{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#information .Opening .open{
+    text-align: left;
+    margin-top: 1vw;
+    padding: 2vw;
+    background-color: #ededed;
+    width: 85%;
+    height: 100%;
+    
+}
+
+.query{
+    margin-top: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+    background-color: #817779;
+}
+.query h3{
+    color: aquamarine;
+    text-align: center;
+    font-size: 3vw;
+}
+.query p{
+    color: aliceblue;
+    font-size: 2vw;
+}
+.mail {
+    font-size: 2vw;
+    text-align: center;
+}
+.mail a{
+    color: black;
+}
+.mail a:hover{
+    color: hotpink;
+}
+
+
+                                                     /* courses page */
+
+#head {
+    background-image: linear-gradient(rgba(72, 41, 87, 0.3), rgba(100, 53, 147, 0.8)),url(images/forCC.jpeg);
+    padding-top: 15vw;
+    padding-bottom: 8vw;
+}
+
+#head .pen h2{
+    font-size: 3vw;
+    text-align: center;
+    color: ghostwhite;
+}
+
+#head .pen h3{
+    font-size: 2vw;
+    text-align: center;
+    color: honeydew;
+}
+
+#head .pen p{
+    color:beige;
+    font-size: 1.5vw;    
+}
+
+/*undergrad*/
+#courses h1 {
+    color:whitesmoke;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#courses .undergrad h3 {
+    color: beige;
+    font-size: 2vw;
+}
+
+#courses .undergrad a img{
+    width: 300px;
+    height: 298px;
+    margin-bottom: 50px;
+}
+.undergrad {
+    float: left;
+    width: 50%;
+}
+
+/*postgrad*/
+#common h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#common .postgrad h3 {
+    color: antiquewhite;
+    font-size: 2vw;
+}
+
+#common .postgrad a img{
+    width: 300px;
+    height: 298px;
+    margin-bottom: 50px;
+}
+.postgrad {
+    float: left;
+    width: 50%;
+}
+
+
+                            /* for wireframe page*/
+
+ #frame div {
+    background-image: linear-gradient(rgba(72, 41, 87, 0.3), rgba(100, 53, 147, 0.8)),
+    url(images/forCC.jpeg);
+    padding-top: 15vw;
+    padding-bottom: 5vw;
+}
+
+#frame div h1{
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+    color: white
+}
+
+#frame div h3{
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+    color: white
+}
+
+#work{
+    background-color:rgba(67, 11, 96, 0.3);
+}
+
+#work h3{
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+#work img{
+    padding: 2px 3px 4px 5px ;
+    margin-left: 2vw;
+}
+
+
+/*Portfolio Page*/
+#task{
+    padding-top: 15vw;
+}
+
+#task .week4{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#task .week4 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#task .week4 a img{
+    margin-left: 6vw;
+}
+
+#task .week5{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#task .week5 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#task .week5 ul li a{
+    display: block;
+    margin-left: 5vw;
+}
+
+#task .week6{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#task .week6 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#task .week7{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#task .week7 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#task .week7 ul li a{
+    display: block;
+    margin-left: 5vw;
+}
+
+#task .week8{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#task .week8 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#task .week8 ul li a{
+    display: block;
+    margin-left: 5vw;
+}
+
+#task .week10{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#task .week10 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#task .week10 ul li a{
+    display: block;
+    margin-left: 5vw;
+}
