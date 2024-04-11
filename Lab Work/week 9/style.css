@@ -1,12 +1,26 @@
-#exercise table{
-    border: 2px solid black;
+.test{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row: auto;
+    gap: 2px;
 }
 
+.first{
+    background-color: skyblue;
+    grid-row:span 2;
+}
+.second{
+    background-color: lightcoral;
+}
+.third{
+    background-color: lightyellow;
+}
+.fourth{
+    background-color: lightgreen;
+    
+}
 
-#exercise .blue tr td{
-    width:100px;
-    height:200px;
-    background-color:blue;
-    border-style:none;
-    position:relative;left:0%;top:0px;
+.first h4{
+    background-color: aliceblue;
+    margin: 12px;
 }
