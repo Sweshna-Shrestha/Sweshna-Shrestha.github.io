@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiplication Table of 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <div id="multiplicationTable"></div>
-
-  <script>
-    function displayMultiplicationTable() {
-      var multiplicationTable = document.getElementById('multiplicationTable');
-      var tableHTML = '<h2>Multiplication Table of 5</h2>';
-
-      for (var i = 1; i <= 10; i++) {
-        var result = 5 * i;
-        tableHTML += '<p>5 * ' + i + ' = ' + result + '</p>';
-      }
-
-      multiplicationTable.innerHTML = tableHTML; 
-    }
-
-    displayMultiplicationTable();
-  </script>
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            let result = 5 * i;
+            let p = document.createElement("p");
+            p.textContent = 5 + " * " + i + " = " + result;
+            document.body.appendChild(p);
+        }
+    </script>
 </body>
 </html>

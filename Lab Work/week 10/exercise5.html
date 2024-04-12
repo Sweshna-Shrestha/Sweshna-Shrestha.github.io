@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Display Images</title>
+    <title>Display Images</title>
 </head>
 <body>
-  <div id="imageContainer"></div>
-
-  <script>
-
+<div id="imageContainer"></div>
+<script>
+    // Function to display images
     function displayImages() {
-      var imageContainer = document.getElementById('imageContainer');
-      
-      
-      for (var i = 1; i <= 4; i++) {
-        var img = document.createElement('img');
-        img.src = i + '.jpg'; 
-        img.alt = 'Image ' + i; 
-        imageContainer.appendChild(img); 
-      }
+        var imageContainer = document.getElementById('imageContainer');
+        for (var i = 1; i <= 4; i++) {
+            var image = document.createElement('img');
+            image.src = i + '.jpg';
+            image.alt = 'Image ' + i;
+            imageContainer.appendChild(image); 
+        }
     }
-
     displayImages();
-  </script>
+</script>
 </body>
 </html>

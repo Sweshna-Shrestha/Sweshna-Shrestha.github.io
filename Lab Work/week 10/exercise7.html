@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Alternate Background Color</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            background-color: #3891A7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>SN</th>
+            <th>Name</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+</table>
+
+<script>
+    // Array of data
+    var data = [
+        {sn: 1, name: 'name1', image: '1.jpg'},
+        {sn: 2, name: 'name2', image: '2.jpg'},
+        {sn: 3, name: 'name3', image: '3.jpg'},
+        {sn: 4, name: 'name4', image: '4.jpg'}
+    ];
+
+
+    function createTable() {
+        var tableBody = document.getElementById('tableBody');
+        for (var i = 0; i < data.length; i++) {
+            var row = document.createElement('tr');
+            if (i % 2 === 0) {
+                row.style.backgroundColor = '#ffffff'; 
+            } else {
+                row.style.backgroundColor = '#f2f2f2'; 
+            }
+            var snCell = document.createElement('td');
+            snCell.textContent = data[i].sn;
+            var nameCell = document.createElement('td');
+            nameCell.textContent = data[i].name;
+            var imageCell = document.createElement('td');
+            imageCell.textContent = data[i].image;
+            row.appendChild(snCell);
+            row.appendChild(nameCell);
+            row.appendChild(imageCell);
+            tableBody.appendChild(row);
+        }
+    }
+
+  
+    createTable();
+</script>
+
+</body>
+</html>

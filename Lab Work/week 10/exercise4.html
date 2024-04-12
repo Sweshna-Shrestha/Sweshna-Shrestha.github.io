@@ -7,41 +7,35 @@
 </head>
 <body>
     <script>
-        var input= prompt("Enter a number between 1 and 7.")
-        var num = parseInt(input);   //praseint covert the number in prompt into an integer so that switch can work. 
-
-        switch (num) {
+        var day = prompt("Enter a number between 1 and 7: ");
+        day = Number(day);
+        switch (day) {
             case 1:
-            document.write("Sunday");
-            break;
-
+                alert("Sunday");
+                break;
             case 2:
-            document.write("Monday");
-            break;
-
+                alert("Monday");
+                break;
             case 3:
-            document.write("Tuesday");
-            break;
-
+                alert("Tuesday");
+                break;
             case 4:
-            document.write("Wednesday");
-            break;
-
+                alert("Wednesday");
+                break;
             case 5:
-            document.write("Thursday");
-            break;
-
+                alert("Thursday");
+                break;
             case 6:
-            document.write("Friday");
-            break;
-
+                alert("Friday");
+                break;
             case 7:
-            document.write("Saturday");
-            break;
-
+                alert("Saturday");
+                break;
             default:
-            document.write("Invalid");
+                alert("Invalid input");
+                break;
         }
+
     </script>
 </body>
 </html>

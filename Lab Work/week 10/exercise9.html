@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Sum and Product Calculator</title>
+</head>
+<body>
+  <h2>Array Sum and Product Calculator</h2>
+  <label for="numbers">Enter integers separated by commas:</label>
+  <input type="text" id="numbers" placeholder="e.g., 1, 2, 3, 4">
+  <button onclick="computeSumAndProduct()">Calculate</button>
+  <br>
+  <div id="result"></div>
+  <script>
+    function computeSumAndProduct() {
+      var input = document.getElementById("numbers").value;
+      var numbersArray = input.split(",").map(function(item) {
+        return parseInt(item.trim(), 10);
+      });
+
+      var sum = 0;
+      var product = 1;
+      for (var i = 0; i < numbersArray.length; i++) {
+        sum += numbersArray[i];
+        product *= numbersArray[i];
+      }
+      var resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "Sum: " + sum + "<br>Product: " + product;
+    }
+  </script>
+</body>
+</html>
