@@ -3,6 +3,27 @@ body{
     background-color:#4b4b51;
 }
 
+@media screen and (max-width: 1000px) {
+    body{
+        width: 100%;
+        background-color:blueviolet;
+    }
+    nav .navigation ul {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+        justify-content: center; /* Center items horizontally */
+    }
+    
+    nav .navigation ul li {
+        margin: 10px; /* Adjust spacing between items */
+    }
+    
+    img {
+        width: 130px; /* Adjust as needed */
+    }
+}
+
+
 /*for navigation*/
 nav{
     display: flex;
